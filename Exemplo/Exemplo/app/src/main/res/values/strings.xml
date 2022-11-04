@@ -1,3 +1,4 @@
 <resources>
+    <string name="underline"><u>Esqueceu a senha?</u></string>
     <string name="app_name">Exemplo</string>
 </resources>
