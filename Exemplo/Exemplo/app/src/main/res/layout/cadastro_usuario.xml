@@ -54,6 +54,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/menu" />
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteY="12dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView

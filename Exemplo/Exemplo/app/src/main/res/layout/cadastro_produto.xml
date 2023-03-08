@@ -55,6 +55,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/menu" />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteY="11dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -72,7 +82,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="389dp"
-        android:layout_height="775dp"
+        android:layout_height="841dp"
         android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,7 +190,7 @@
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="221dp"
         android:layout_height="45dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#000000"
         android:ems="10"
         android:inputType="textPersonName"
@@ -196,7 +206,7 @@
         android:backgroundTint="#FFFFFF"
         app:srcCompat="@drawable/select"
         tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="564dp" />
+        tools:layout_editor_absoluteY="563dp" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -206,6 +216,118 @@
         app:srcCompat="@drawable/plus"
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="221dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Localização"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="38dp"
+        android:layout_height="29dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/select"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="729dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#005CAA"
+        app:srcCompat="@drawable/plus"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="701dp" />
+
+    <TextView
+        android:id="@+id/textImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Anexo"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="221dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Anexo"
+        android:textColor="#000000"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textImage2"
+        app:strokeColor="#000000" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descartavel"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="888dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#005CAA"
+        android:text="Cadastrar Produto"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
