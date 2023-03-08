@@ -86,10 +86,9 @@
         android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/route"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/dadosgerais"
@@ -312,8 +311,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descartavel"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="888dp" />
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="876dp" />
 
     <Button
         android:id="@+id/button5"
