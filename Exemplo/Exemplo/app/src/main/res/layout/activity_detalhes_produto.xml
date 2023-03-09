@@ -19,7 +19,7 @@
     <View
         android:id="@+id/border"
         android:layout_width="380dp"
-        android:layout_height="580dp"
+        android:layout_height="1195dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/border"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +64,7 @@
     <View
         android:id="@+id/viewNomeProduto"
         android:layout_width="350dp"
+        android:background="@drawable/border"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
@@ -72,11 +73,11 @@
 
     <TextView
         android:id="@+id/nomeProduto"
-        android:layout_width="wrap_content"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:text="Resistor de filme de Carbono 5K1 - 1/4W"
+        app:layout_constraintEnd_toEndOf="@+id/viewNomeProduto"
         app:layout_constraintStart_toStartOf="@+id/viewNomeProduto"
         app:layout_constraintTop_toTopOf="@+id/viewNomeProduto" />
 
@@ -97,18 +98,176 @@
         android:layout_height="100dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/border"
         app:layout_constraintStart_toStartOf="@+id/border"
         app:layout_constraintTop_toBottomOf="@+id/caracteristcas" />
 
     <TextView
         android:id="@+id/caracteristicasProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="LOREM YPISUM LOREM LORE"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCaracteristicas"
+        app:layout_constraintEnd_toEndOf="@+id/viewCaracteristicas"
+        app:layout_constraintStart_toStartOf="@+id/viewCaracteristicas"
+        app:layout_constraintTop_toTopOf="@+id/viewCaracteristicas"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <TextView
+        android:id="@+id/classificacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:text="Classificação"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/viewCaracteristicas" />
+
+    <View
+        android:id="@+id/viewClassificacao"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/classificacao" />
+
+    <TextView
+        android:id="@+id/classificacaoProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Material Elétrico"
         android:layout_marginTop="5dp"
-        android:text="Resistor de filme de Carbono 5K1 - 1/4W"
-        app:layout_constraintStart_toStartOf="@+id/viewCaracteristicas"
-        app:layout_constraintTop_toTopOf="@+id/viewCaracteristicas" />
+        app:layout_constraintEnd_toEndOf="@+id/viewClassificacao"
+        app:layout_constraintStart_toStartOf="@+id/viewClassificacao"
+        app:layout_constraintTop_toTopOf="@+id/viewClassificacao"></TextView>
 
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/viewClassificacao" />
 
+    <View
+        android:id="@+id/viewQuantidade"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/quantidade" />
+
+    <TextView
+        android:id="@+id/quantidadeProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="105"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewQuantidade"
+        app:layout_constraintStart_toStartOf="@+id/viewQuantidade"
+        app:layout_constraintTop_toTopOf="@+id/viewQuantidade"></TextView>
+
+    <TextView
+        android:id="@+id/localizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localização"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/viewQuantidade" />
+
+    <View
+        android:id="@+id/viewLocalizacao"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/localizacao" />
+
+    <TextView
+        android:id="@+id/localizacaoProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="P1 CE A5"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewLocalizacao"
+        app:layout_constraintStart_toStartOf="@+id/viewLocalizacao"
+        app:layout_constraintTop_toTopOf="@+id/viewLocalizacao"></TextView>
+
+    <TextView
+        android:id="@+id/anexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anexo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/viewLocalizacao" />
+
+    <ImageButton
+        android:id="@+id/downloadAnexo"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:background="#005CAA"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/anexo"
+        app:srcCompat="@drawable/downloaddireto" />
+
+    <TextView
+        android:id="@+id/descartavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descartável"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/downloadAnexo" />
+
+    <View
+        android:id="@+id/viewDescartavel"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/descartavel" />
+
+    <TextView
+        android:id="@+id/descartavelProduto"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Sim"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewDescartavel"
+        app:layout_constraintStart_toStartOf="@+id/viewDescartavel"
+        app:layout_constraintTop_toTopOf="@+id/viewDescartavel"></TextView>
+
+    <Button
+        android:id="@+id/addReserva"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:background="#005CAA"
+        android:text="Adicionar na reserva"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/border"
+        app:layout_constraintTop_toBottomOf="@+id/viewDescartavel"
+        app:srcCompat="@drawable/downloaddireto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
