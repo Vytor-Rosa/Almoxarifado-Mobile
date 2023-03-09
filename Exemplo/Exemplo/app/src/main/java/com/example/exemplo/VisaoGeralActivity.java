@@ -23,7 +23,7 @@ public class VisaoGeralActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.visao_geral);
 
-
+        this.mAdapter = new MyAdapter(getApplicationContext(), produtos);
 
         Drawable drawable = getResources().getDrawable(R.drawable.eletrico);
         produtos.add(new Produto("String nome",
@@ -31,16 +31,32 @@ public class VisaoGeralActivity extends AppCompatActivity {
                 "String caracteristicas",
                 "String classificao",
                 "String localizacao",
-                10,
+                "10 unidades",
+                true,
+                drawable,
+                drawable));
+        produtos.add(new Produto("String nome",
+                "String descricao",
+                "String caracteristicas",
+                "String classificao",
+                "String localizacao",
+                "10 unidades",
+                true,
+                drawable,
+                drawable));
+        produtos.add(new Produto("String nome",
+                "String descricao",
+                "String caracteristicas",
+                "String classificao",
+                "String localizacao",
+                "10 unidades",
                 true,
                 drawable,
                 drawable));
 
         recyclerView = findViewById(R.id.recycler_view); // Inicializa o RecyclerView
-
-        mAdapter = new MyAdapter(produtos); // Instancia o Adapter
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(mAdapter); // Configura o Adapter na RecyclerView
+        recyclerView.setAdapter(this.mAdapter); // Configura o Adapter na RecyclerView
     }
 
     @Override

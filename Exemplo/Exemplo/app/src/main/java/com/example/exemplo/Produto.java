@@ -6,12 +6,11 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Produto extends AppCompatActivity {
-    private String nome, descricao, caracteristicas, classificao, localizacao;
-    private Integer quantidade;
+    private String nome, descricao, caracteristicas, classificao, localizacao, quantidade;
     private boolean descartavel;
     private Drawable imagem, anexo;
 
-    public Produto(String nome, String descricao, String caracteristicas, String classificao, String localizacao, Integer quantidade, boolean descartavel, Drawable imagem, Drawable anexo) {
+    public Produto(String nome, String descricao, String caracteristicas, String classificao, String localizacao, String quantidade, boolean descartavel, Drawable imagem, Drawable anexo) {
         this.nome = nome;
         this.descricao = descricao;
         this.caracteristicas = caracteristicas;
@@ -23,7 +22,7 @@ public class Produto extends AppCompatActivity {
         this.anexo = anexo;
     }
 
-    public Produto(int contentLayoutId, String nome, String descricao, String caracteristicas, String classificao, String localizacao, Integer quantidade, boolean descartavel, Drawable imagem, Drawable anexo) {
+    public Produto(int contentLayoutId, String nome, String descricao, String caracteristicas, String classificao, String localizacao, String quantidade, boolean descartavel, Drawable imagem, Drawable anexo) {
         super(contentLayoutId);
         this.nome = nome;
         this.descricao = descricao;
@@ -76,11 +75,11 @@ public class Produto extends AppCompatActivity {
         this.localizacao = localizacao;
     }
 
-    public Integer getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(Integer quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 

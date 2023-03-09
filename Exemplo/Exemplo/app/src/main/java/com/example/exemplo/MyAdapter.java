@@ -16,12 +16,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder>{
     List<Produto> produtos;
     private OnItemClickListener mListener;
 
-    public MyAdapter(Context context, List<Produto> items) {
+    public MyAdapter(Context context, List<Produto> produtos) {
         this.context = context;
-        this.produtos = new ArrayList<>();
-    }
-
-    public MyAdapter(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 
     @NonNull
