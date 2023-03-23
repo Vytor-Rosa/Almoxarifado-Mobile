@@ -262,9 +262,9 @@
     <Button
         android:id="@+id/addReserva"
         android:layout_width="350dp"
-        android:layout_height="35dp"
+        android:layout_height="50dp"
         android:layout_marginStart="12dp"
-        android:background="#005CAA"
+        android:backgroundTint="#005CAA"
         android:text="Adicionar na reserva"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@+id/border"
