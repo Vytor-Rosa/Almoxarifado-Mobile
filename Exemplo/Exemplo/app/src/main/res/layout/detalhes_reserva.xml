@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/caminho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Almoxarifado / Detalhes da reserva"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caminho" />
+
+    <TextView
+        android:id="@+id/reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Reserva N° 1"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toEndOf="@+id/reserva"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/circulo_verde" />
+
+    <TextView
+        android:id="@+id/professor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Professor: Romário"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/reserva" />
+
+    <TextView
+        android:id="@+id/retirada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Retirar em: 30/06/2023 às 18:00"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/professor" />
+
+    <TextView
+        android:id="@+id/reservado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Reserva feita em: 10/01/2023 às 15:00"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/retirada" />
+
+    <TextView
+        android:id="@+id/produtos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Produtos: "
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/reservado" />
+
+    <View
+        android:id="@+id/viewProduto"
+        android:layout_width="342dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/produtos" />
+
+    <TextView
+        android:id="@+id/nomeProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Nome do produto"
+        app:layout_constraintStart_toStartOf="@+id/viewProduto"
+        app:layout_constraintTop_toTopOf="@+id/viewProduto" />
+
+    <TextView
+        android:id="@+id/localizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Localização: P3CEA8"
+        app:layout_constraintStart_toStartOf="@+id/viewProduto"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto" />
+
+    <TextView
+        android:id="@+id/descartavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Descartável"
+        app:layout_constraintStart_toStartOf="@+id/viewProduto"
+        app:layout_constraintTop_toBottomOf="@+id/localizacao" />
+
+    <TextView
+        android:id="@+id/unidades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="100 unidades"
+        app:layout_constraintStart_toStartOf="@+id/viewProduto"
+        app:layout_constraintTop_toBottomOf="@+id/descartavel" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProduto"
+        app:layout_constraintEnd_toEndOf="@+id/viewProduto"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/nomeProduto"
+        app:layout_constraintTop_toTopOf="@+id/viewProduto"
+        app:srcCompat="@drawable/eletrico" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
