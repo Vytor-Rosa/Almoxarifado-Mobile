@@ -1,6 +1,8 @@
 package com.example.exemplo;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -9,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +27,30 @@ public class VisaoGeralActivity extends AppCompatActivity {
         setContentView(R.layout.visao_geral);
 
         this.mAdapter = new MyAdapter(getApplicationContext(), produtos);
+        mAdapter.setOnItemClickListener((int position) -> {
+            Intent it = new Intent(VisaoGeralActivity.this, DetalhesProdutos.class);
+
+            it.putExtra("nome", produtos.get(position).getNome());
+            it.putExtra("descricao", produtos.get(position).getDescricao());
+            it.putExtra("caracteristicas", produtos.get(position).getCaracteristicas());
+            it.putExtra("classificao", produtos.get(position).getClassificao());
+            it.putExtra("localizacao", produtos.get(position).getLocalizacao());
+            it.putExtra("quantidade", produtos.get(position).getQuantidade());
+            it.putExtra("descartavel", produtos.get(position).isDescartavel());
+
+            Bitmap bitmap1 = ((BitmapDrawable) produtos.get(position).getImagem()).getBitmap();
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            bitmap1.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            byte[] byteArray = stream.toByteArray();
+            it.putExtra("imagem", byteArray);
+
+            Bitmap bitmap2 = ((BitmapDrawable) produtos.get(position).getAnexo()).getBitmap();
+            bitmap2.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            byte[] byteArray2 = stream.toByteArray();
+            it.putExtra("anexo", byteArray2);
+
+            startActivityForResult(it, 1);
+        });
 
         Drawable drawable = getResources().getDrawable(R.drawable.eletrico);
         produtos.add(new Produto("String nome",
